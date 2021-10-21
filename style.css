@@ -48,6 +48,7 @@ input[type="search"] {
     background: #3b4acc;
     color: #ffffff;
     margin: 0 10px;
+    cursor: pointer;
 }
 
 .main {
@@ -60,8 +61,8 @@ input[type="search"] {
     height: 100%;
     display: flex;
     justify-content: space-between;
-    align-items: center;
     flex-direction: column;
+    align-items: center;
     padding: 2rem;
     background: #ffffff;
     color: #3b4acc;
@@ -69,8 +70,8 @@ input[type="search"] {
 
 .pokemon-image {
     background: rgba(0, 0, 0, 0.2);
-    border-radius: 10px;
     margin: auto 0;
+    border-radius: 10px;
 }
 
 .pokemon-image img {
@@ -79,7 +80,8 @@ input[type="search"] {
 
 .pokemon-info {
     margin: auto 0;
-    padding: 1rem;
+    padding: 2rem;
+    text-align: center;
 }
 
 .pokemon-name {
@@ -103,4 +105,10 @@ input[type="search"] {
 
 .pokemon-height {
     font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.pokemon-skills span {
+    font-size: 1.5rem;
+    font-weight: 500;
 }
