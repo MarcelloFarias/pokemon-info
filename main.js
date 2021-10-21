@@ -25,6 +25,7 @@ function createPokemonCard() {
                 <h3 class="pokemon-type"> Type: ${pokemon.types.map(item => item.type.name).toString()}</h3>
                 <h3 class="pokemon-weight">Weight: ${pokemon.weight / 10}kg</h3>
                 <h3 class="pokemon-height">Height: ${pokemon.height / 10}m</h3>
+                <small class="pokemon-skills"><span>Skills: </span> ${pokemon.moves.map(item => ' ' + item.move.name).toString()}</small>
             </div>`;
     
     return card;
@@ -42,4 +43,4 @@ btnSearch.addEventListener('click', event => {
     event.preventDefault();
     namePokemon = inputSearch.value.toLowerCase();
     searchPokemon(namePokemon);
-})
+});
